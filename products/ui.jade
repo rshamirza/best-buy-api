@@ -1,0 +1,20 @@
+h5 Search
+.row
+    .col-md-5
+        .form-group.form-group-default
+            label Product name          
+            input#p.form-control(type='text', required='')                
+    .col-md-1                         
+        button.btn.btn-primary(onClick='products.searchByName($("#p").val())') Search
+    .col-md-3  
+        .form-group.form-group-default
+            h5 Examples of searches:
+            ul
+                li
+                    a(href="#" onClick='products.searchByName("Apple")') Apple
+                li    
+                    a(href="#" onClick='products.searchByName("touchscreen")') touchscreen
+                li    
+                    a(href="#" onClick='products.searchByName("mixer")') mixer   
+        
+
