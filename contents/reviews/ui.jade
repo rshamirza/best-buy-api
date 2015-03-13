@@ -1,0 +1,19 @@
+h5 Search
+.row
+    .col-md-5
+        .form-group.form-group-default
+            label Review sku           
+            input#r.form-control(type='text', required='')                
+    .col-md-1                         
+        button.btn.btn-primary(onClick='reviews.searchBySku($("#r").val())') Search
+    .col-md-3
+        .form-group.form-group-default       
+            h5 Examples of searches:
+            ul
+                li
+                    a(href="#" onClick='reviews.searchBySku("2601005")') 2601005
+                li
+                    a(href="#" onClick='reviews.searchBySku("1780275")') 1780275
+                li
+                    a(href="#" onClick='reviews.searchBySku("1722018")') 1722018
+

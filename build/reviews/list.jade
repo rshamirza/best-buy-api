@@ -1,0 +1,28 @@
+h3 Results
+table.table.table-striped
+    thead
+        tr
+            th Title
+            th sku
+            th name
+            th rating
+            th comment
+
+    tbody
+        each review in data.reviews
+            tr
+                td
+                    a(href="#" onClick='reviews.display("' + review.id + '")')
+                        = review.title
+                td
+                    = review.sku        
+                td
+                    each n in review.reviewer
+                        = n.name
+                td
+                    = review.rating
+                td
+                    = review.comment
+
+
+

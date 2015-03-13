@@ -1,0 +1,21 @@
+each review in data.reviews
+    h1.inline= review.title
+    div.row 
+        div.three.columns
+            b Sku:
+            = review.sku
+        div.three.columns
+            b Submission Time:
+            = review.submissionTime
+    div.row
+        div.three.columns 
+            b Name:
+            each n in review.reviewer
+                = n.name
+        div.three.columns
+            b Rating:
+            = review.rating
+    div.row 
+        div.three.columns
+            b Comment:
+            = review.comment

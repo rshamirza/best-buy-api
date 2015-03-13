@@ -1,0 +1,36 @@
+h3 Results
+table.table.table-striped
+    thead
+        tr
+            th Name
+            th sku
+            th regular Price
+            th sale Price
+            th manufacturer
+            th type
+            th Review Average
+            th short Description
+
+
+    tbody
+        each product in data.products
+            tr
+                td
+                    a(href="#" onClick='products.display("' + product.sku + '")')
+                        = product.name
+                td
+                    = product.sku
+                td
+                    = product.regularPrice
+                td
+                    = product.salePrice
+                td
+                    = product.manufacturer
+                td 
+                    = product.type
+                td 
+                    = product.customerReviewAverage
+                td
+                    = product.shortDescription
+
+

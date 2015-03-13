@@ -1,0 +1,27 @@
+each product in data.products
+    h1= product.name
+    div.row
+        div.three.columns 
+            b Sku:
+            = product.sku 
+        div.three.columns
+            b Regular Price:
+            = product.regularPrice
+    div.row 
+        div.three.columns
+            b Sale Price:
+            = product.salePrice 
+        div.three.columns
+            b Manufacturer:
+            = product.manufacturer
+    div.row 
+        div.three.columns
+            b Type:
+            = product.type
+        div.three.columns
+            b Customer Review Average:
+            = product.customerReviewAverage
+    div.row 
+        div.six.columns
+            b Short Description:
+            = product.shortDescription
